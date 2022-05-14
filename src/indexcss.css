@@ -1,0 +1,29 @@
+.left {
+    display: block;
+    float: left;
+    width: 50%;
+    height: 100%;
+    background-color: aliceblue;
+    box-shadow : 2px 2px 5px #0000006b;
+}
+
+.right {
+    display: block;
+    float: left;
+    width: 50%;
+    height: 100%;
+    background-color: rgb(33, 105, 14);
+    box-shadow : 2px 2px 5px #0000006b;
+}
+
+.right .form_box {
+    width: 50%;
+}
+
+.right .form_box h1{
+    color: aliceblue;
+}
+
+.log_btn {
+    float: right;
+}

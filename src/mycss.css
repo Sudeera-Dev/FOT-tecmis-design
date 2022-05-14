@@ -1,0 +1,125 @@
+body {
+   font-family: "Lato", sans-serif;
+   background-color: #ecf0fdf1;
+ }
+ 
+ .sidenav {
+   height: 100%;
+   width: 80;
+   position: fixed;
+   z-index: 2;
+   top: 0;
+   left: 0;
+   background-color: rgb(33, 105, 14);
+   overflow-x: hidden;
+   transition: 0.5s;
+   padding-top: 100px;
+   box-shadow : 2px 2px 5px #0000006b;
+ }
+ 
+ .sidenav a {
+   padding: 8px 8px 8px 20px;
+   text-decoration: none;
+   font-size: 25px;
+   color: #ffffff;
+   display: block;
+   transition: 0.3s;
+ }
+ 
+ .sidenav a:hover {
+   background-color: #1a3f12;
+ }
+
+ .current_link {
+  background-color: #0b2006;
+}
+ 
+ .sidenav i {
+    padding: 8px 8px;
+ }
+ 
+ .sidenav .bottom {
+  position: absolute;
+  width: 250px;
+  bottom: 10px;
+ }
+
+ .sidenav .bottom:hover {
+    background-color: rgb(136, 12, 12);
+ }
+
+#navdel1, #navdel2, #navdel3, #navdel4, #navdel5 {
+   display: inline;
+   padding-left: 8px;
+   transition: 0.3s;
+}
+
+ #main {
+   transition: margin-left .5s;
+ }
+ 
+ @media screen and (max-height: 450px) {
+   .sidenav {padding-top: 15px;}
+   .sidenav a {font-size: 18px;}
+ }
+
+ .top_nav {
+   display: inline-block;
+   position: fixed;
+   z-index: 1;
+   width: 100%;
+   height: 80px;
+   background-color: #f3f3f3;
+   box-shadow : 2px 2px 5px #0000006b;
+ }
+
+ .top_nav a{
+   display: block;
+   width:auto;
+   height: auto;
+   float: right;
+   padding: 20px;
+   text-decoration: none;
+   font-size: 25px;
+   color: #1b1b1b;
+   transition: 0.3s;
+ }
+
+ .top_nav a:hover{
+  font-size: 30px;
+  font-weight:bolder;
+  transition: 0.3s;
+ }
+
+.top_select{
+  font-size: 50px;
+  font-weight:bolder;
+  transition: 0.3s;
+  text-shadow : 2px 2px 5px #0000006b;
+}
+
+ .top_nav .profile {
+   height: 100px;
+   border-radius: 20px;
+   border: 5px solid rgb(206, 206, 206);
+   box-shadow : 2px 2px 5px #0000006b;
+   transition: 0.3s;
+ }
+
+ .top_nav .profile:hover {
+  height: 120px;
+}
+
+.top_nav .logo {
+  height: 80px;
+  float: left;
+  padding-left: 88px;
+  padding-bottom: 20px;
+  transition: 0.5s;
+}
+
+.inside{
+  padding-top: 88px;
+  padding-left: 10px;
+}
+
