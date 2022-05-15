@@ -30,3 +30,4 @@ $("#mySidenav").hover(function () {
     $('.logo').attr('style', 'padding-left: 100px');
 }
 );
+
