@@ -414,3 +414,7 @@ h2{
 .dropdown:hover .dropdown-content {display: block;}
 
 .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+#ict3113ex, #back{
+  display: none;
+}

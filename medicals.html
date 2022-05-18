@@ -46,8 +46,138 @@
     </div>
     <div id="main">
         <div class="inside">
-            
+            <h2 id="label">Medicals</h2>
+            <div class="table-wrapper" id="tabhide">
+                <table class="fl-table">
+                    <thead>
+                        <tr>
+                            <th>Course code</th>
+                            <th>Course name</th>
+                            <th>Submited medicals count</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>ENG3122</td>
+                            <td>English V</td>
+                            <td>3</td>
+                            <td><button class="btn btn-primary">View</button></td>
+                        </tr>
+                        <tr>
+                            <td>ICT3113</td>
+                            <td>Advanced Programming in Java/C++</td>
+                            <td>3</td>
+                            <td><button class="btn btn-primary" id="ict3113">View</button></td>
+                            <script>
+                                $("#ict3113").on("click", function () {
+                                    $("[id='ict3113ex']").show(300);
+                                    $("#label").text("ICT3113 - Medicals");
+                                    $("#tabhide").hide(300);
+                                    $("#back").show();
+                                });
+                            </script>
+                        </tr>
+                        <tr>
+                            <td>ICT3123</td>
+                            <td>IT Project Management</td>
+                            <td>3</td>
+                            <td><button class="btn btn-primary">View</button></td>
+                        </tr>
+                        <tr>
+                            <td>ICT3132</td>
+                            <td>Software Testing Methods and Tools</td>
+                            <td>0</td>
+                            <td><button class="btn btn-primary">View</button></td>
+                        </tr>
+                        <tr>
+                            <td>ICT3142</td>
+                            <td>Mobile Computing Principles</td>
+                            <td>1</td>
+                            <td><button class="btn btn-primary">View</button></td>
+                        </tr>
+                        <tr>
+                            <td>ICT3152</td>
+                            <td>Human Computer Interaction</td>
+                            <td>0</td>
+                            <td><button class="btn btn-primary">View</button></td>
+                        </tr>
+                        <tr>
+                            <td>ICT3162</td>
+                            <td>Rapid and Agile Software Development</td>
+                            <td>1</td>
+                            <td><button class="btn btn-primary">View</button></td>
+                        </tr>
+                        <tr>
+                            <td>ICT3173</td>
+                            <td>Group Project</td>
+                            <td>2</td>
+                            <td><button class="btn btn-primary">View</button></td>
+                        </tr>
+                        <tr>
+                            <td>TCS3131</td>
+                            <td>Human Resource Management</td>
+                            <td>0</td>
+                            <td><button class="btn btn-primary">View</button></td>
+                        </tr>
+                    <tbody>
+                </table>
+            </div>
+
         </div>
+        <div class="card_holder">
+            <div class="card_custom" id="ict3113ex">
+                <table class="fl-table">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Session type</th>
+                            <th>status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2022/04/01</td>
+                            <td>Practical</td>
+                            <td class="text-warning">Pending</td>
+                        </tr>
+                    <tbody>
+                </table>
+            </div>
+            <div class="card_custom" id="ict3113ex">
+                <table class="fl-table">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Session type</th>
+                            <th>status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2022/04/01</td>
+                            <td>Theory</td>
+                            <td class="text-danger">Rejected</td>
+                        </tr>
+                        <tr>
+                            <td>2022/04/01</td>
+                            <td>Theory</td>
+                            <td class="text-success">Approved</td>
+                        </tr>
+                        
+                    <tbody>
+                </table>
+            </div>
+            <h2><button class="btn btn-danger" id="back">Back</button></h2>
+            <script>
+                $("#back").on("click", function () {
+                    $("[id='ict3113ex']").hide(300);
+                    $("#label").text("Medicals");
+                    $("#tabhide").show(300);
+                    $("#back").hide();
+                });
+            </script>
+        </div>
+    </div>
     </div>
 
     <script src="src/myjs.js"></script>
