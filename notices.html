@@ -53,7 +53,7 @@
                     <thead>
                         <tr>
                             <td colspan="5">
-                                <button class="btn btn-primary" id="all">All</button>&emsp;
+                                <button class="btn btn-success" id="all">All</button>&emsp;
                                 <button class="btn btn-primary" id="ict">ICT</button>&emsp;
                                 <button class="btn btn-primary" id="bst">BST</button>&emsp;
                                 <button class="btn btn-primary" id="ent">ENT</button>&emsp;
@@ -64,24 +64,57 @@
                                     $("[id='ictnt']").show();
                                     $("[id='bstnt']").show();
                                     $("[id='entnt']").show();
+                                    $("#all").removeClass("btn-primary");
+                                    $("#all").addClass("btn-success");
+                                    $("#ict").removeClass("btn-success");
+                                    $("#ict").addClass("btn-primary");
+                                    $("#bst").removeClass("btn-success");
+                                    $("#bst").addClass("btn-primary");
+                                    $("#ent").removeClass("btn-success");
+                                    $("#ent").addClass("btn-primary");
                                 });
                                 $("#ict").on("click", function () {
                                     $("[id='allnt']").show();
                                     $("[id='ictnt']").show();
                                     $("[id='bstnt']").hide();
                                     $("[id='entnt']").hide();
+                                    $("#all").removeClass("btn-success");
+                                    $("#all").addClass("btn-primary");
+                                    $("#ict").removeClass("btn-primary");
+                                    $("#ict").addClass("btn-success");
+                                    $("#bst").removeClass("btn-success");
+                                    $("#bst").addClass("btn-primary");
+                                    $("#ent").removeClass("btn-success");
+                                    $("#ent").addClass("btn-primary");
+                                    
                                 });
                                 $("#bst").on("click", function () {
                                     $("[id='allnt']").show();
                                     $("[id='ictnt']").hide();
                                     $("[id='bstnt']").show();
                                     $("[id='entnt']").hide();
+                                    $("#all").removeClass("btn-success");
+                                    $("#all").addClass("btn-primary");
+                                    $("#ict").removeClass("btn-success");
+                                    $("#ict").addClass("btn-primary");
+                                    $("#bst").removeClass("btn-primary");
+                                    $("#bst").addClass("btn-success");
+                                    $("#ent").removeClass("btn-success");
+                                    $("#ent").addClass("btn-primary");
                                 });
                                 $("#ent").on("click", function () {
                                     $("[id='allnt']").show();
                                     $("[id='ictnt']").hide();
                                     $("[id='bstnt']").hide();
                                     $("[id='entnt']").show();
+                                    $("#all").removeClass("btn-success");
+                                    $("#all").addClass("btn-primary");
+                                    $("#ict").removeClass("btn-success");
+                                    $("#ict").addClass("btn-primary");
+                                    $("#bst").removeClass("btn-success");
+                                    $("#bst").addClass("btn-primary");
+                                    $("#ent").removeClass("btn-primary");
+                                    $("#ent").addClass("btn-success");
                                 });
                             </script>
                         </tr>
