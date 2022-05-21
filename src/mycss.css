@@ -423,6 +423,12 @@ h2{
   color: rgb(4, 0, 255);
 }
 
+
+.ic_img{
+  transition: 0.3s;
+
+}
+
 .ic_img:hover{
   width: 100px;
   transition: 0.3s;
