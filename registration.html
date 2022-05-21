@@ -46,9 +46,72 @@
 
     <div id="main">
         <div class="inside">
-            <h2>Examinations Registration Unit</h2>
+            <h2><button class="btn btn-success" id="eru">Examinations Registration Unit</button>&emsp;
+                <button class="btn btn-primary" id="cru">Course Registration Unit</button>&emsp;
+                <button class="btn btn-primary" id="acu">All Course Units that you have registered up-to-date</button>&emsp;
+                <button class="btn btn-primary" id="hr">Hostel Registration</button>&emsp;
+            </h2>
+            <script>
+                $("#eru").on("click", function () {
+                    $("[id='erub']").show(300);
+                    $("[id='crub']").hide(300);
+                    $("[id='acub']").hide(300);
+                    $("[id='hrb']").hide(300);
+                    $("#eru").removeClass("btn-primary");
+                    $("#eru").addClass("btn-success");
+                    $("#cru").removeClass("btn-success");
+                    $("#cru").addClass("btn-primary");
+                    $("#acu").removeClass("btn-success");
+                    $("#acu").addClass("btn-primary");
+                    $("#hr").removeClass("btn-success");
+                    $("#hr").addClass("btn-primary");
+                });
+                $("#cru").on("click", function () {
+                    $("[id='erub']").hide(300);
+                    $("[id='crub']").show(300);
+                    $("[id='acub']").hide(300);
+                    $("[id='hrb']").hide(300);
+                    $("#eru").removeClass("btn-success");
+                    $("#eru").addClass("btn-primary");
+                    $("#cru").removeClass("btn-primary");
+                    $("#cru").addClass("btn-success");
+                    $("#acu").removeClass("btn-success");
+                    $("#acu").addClass("btn-primary");
+                    $("#hr").removeClass("btn-success");
+                    $("#hr").addClass("btn-primary");
+                });
+                $("#acu").on("click", function () {
+                    $("[id='erub']").hide(300);
+                    $("[id='crub']").hide(300);
+                    $("[id='acub']").show(300);
+                    $("[id='hrb']").hide(300);
+                    $("#eru").removeClass("btn-success");
+                    $("#eru").addClass("btn-primary");
+                    $("#cru").removeClass("btn-success");
+                    $("#cru").addClass("btn-primary");
+                    $("#acu").removeClass("btn-primary");
+                    $("#acu").addClass("btn-success");
+                    $("#hr").removeClass("btn-success");
+                    $("#hr").addClass("btn-primary");
+                });
+                $("#hr").on("click", function () {
+                    $("[id='erub']").hide(300);
+                    $("[id='crub']").hide(300);
+                    $("[id='acub']").hide(300);
+                    $("[id='hrb']").show(300);
+                    $("#eru").removeClass("btn-success");
+                    $("#eru").addClass("btn-primary");
+                    $("#cru").removeClass("btn-success");
+                    $("#cru").addClass("btn-primary");
+                    $("#acu").removeClass("btn-success");
+                    $("#acu").addClass("btn-primary");
+                    $("#hr").removeClass("btn-primary");
+                    $("#hr").addClass("btn-success");
+                });
+            </script>
+            <h2 id="erub">Examinations Registration Unit</h2>
 
-            <div class="table-wrapper">
+            <div class="table-wrapper" id="erub">
                 <table class="fl-table">
                     <thead>
                         <tr>
@@ -115,13 +178,12 @@
                     <tbody>
                 </table>
             </div>
-            <hr>
         </div>
-        <h2>Course Registration Unit</h2>
+        <h2 id="crub">Course Registration Unit</h2>
         <center>
-            <p>Registered Course Units for <b>2020_2021 Academic year and Semester 1</b></p>
+            <p id="crub">Registered Course Units for <b>2020_2021 Academic year and Semester 1</b></p>
         </center>
-        <div class="table-wrapper">
+        <div class="table-wrapper" id="crub">
             <table class="fl-table">
                 <thead>
                     <tr>
@@ -194,9 +256,8 @@
                 <hr>
             </center>
         </div>
-        <hr>
-        <h2>All Course Units that you have registered up-to-date</h2>
-        <div class="table-wrapper">
+        <h2 id="acub">All Course Units that you have registered up-to-date</h2>
+        <div class="table-wrapper" id="acub">
             <table class="fl-table">
                 <thead>
                     <tr>
@@ -275,9 +336,8 @@
                 <hr>
             </center>
         </div>
-        <hr>
-        <h2>Hostel Registration</h2>
-        <div class="table-wrapper">
+        <h2 id="hrb">Hostel Registration</h2>
+        <div class="table-wrapper" id="hrb">
             <table class="fl-table">
                 <tr>
                     <td>Academic Year</td>
@@ -307,7 +367,6 @@
                 </tr>
             </table>
         </div>
-        <hr>
     </div>
 
     <script src="src/myjs.js"></script>

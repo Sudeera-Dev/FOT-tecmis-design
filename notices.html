@@ -46,8 +46,8 @@
     </div>
     <div id="main">
         <div class="inside">
-            <h2>Recent Notices</h2>
-            <div class="table-wrapper">
+            <h2 id="tabhide">Recent Notices</h2>
+            <div class="table-wrapper" id="tabhide">
                 <table class="fl-table">
 
                     <thead>
@@ -86,7 +86,7 @@
                                     $("#bst").addClass("btn-primary");
                                     $("#ent").removeClass("btn-success");
                                     $("#ent").addClass("btn-primary");
-                                    
+
                                 });
                                 $("#bst").on("click", function () {
                                     $("[id='allnt']").show();
@@ -135,7 +135,14 @@
                                 <a href=""><i class="bi bi-cloud-download-fill text-success"></i></a>&emsp;
                                 <a href=""><i class="bi bi-trash3-fill text-danger"></i></a>&emsp;
                             </td>
-                            <td><a href="" class="btn btn-primary">View</a></td>
+                            <td><button class="btn btn-primary" id="ict3113">View</button></td>
+                            <script>
+                                $("#ict3113").on("click", function () {
+                                    $("[id='ict3113ex']").show(300);
+                                    $("[id='tabhide']").hide(300);
+                                    $("#back").show();
+                                });
+                            </script>
                         </tr>
                         <tr id="ictnt">
                             <td>2022/05/13</td>
@@ -186,8 +193,8 @@
                 </table>
             </div>
             <hr>
-            <h2>Previous Notices</h2>
-            <div class="table-wrapper">
+            <h2 id="tabhide">Previous Notices</h2>
+            <div class="table-wrapper" id="tabhide">
                 <table class="fl-table">
                     <thead>
                         <tr>
@@ -246,7 +253,39 @@
                     <tbody>
                 </table>
             </div>
+            <div class="card_holder" id="ict3113ex">
+                <table class="fl-table">
+                    <thead>
+                        <tr>
+                            <th colspan="2"><b>TECMIS new UI update</b></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><b>Date :</b>2022/05/15</td>
+                            <td><b>Department :</b>All</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"></td>
+                        </tr>
+                        <tr></tr>
+                        <tr></tr>
+                        <tr>
+                            <td colspan="2">New User Interface update of TECMIS is now live</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <h2><button class="btn btn-danger" id="back">Back</button></h2>
+            <script>
+                $("#back").on("click", function () {
+                    $("[id='ict3113ex']").hide(300);
+                    $("[id='tabhide']").show(300);
+                    $("#back").hide();
+                });
+            </script>
         </div>
+    </div>
     </div>
 
     <script src="src/myjs.js"></script>
