@@ -49,7 +49,200 @@
     </div>
     <div id="main">
         <div class="inside">
+            <h2 id="erub">Examinations Results</h2>
+            <h2>
+                <button class="btn btn-success" id="all">All</button>&emsp;
+                <button class="btn btn-primary" id="l1">Level 1</button>&emsp;
+                <button class="btn btn-primary" id="l2">Level 2</button>&emsp;
+                <button class="btn btn-primary" id="l3">Level 3</button>&emsp;
+                <button class="btn btn-primary" id="l4">Level 4</button>&emsp;
+            </h2>
+            <script>
+                $("#all").on("click", function () {
+                    $("[id='ff']").show(300);
+                    $("[id='fs']").show(300);
+                    $("[id='sf']").show(300);
+                    $("[id='ss']").show(300);
+                    $("[id='tf']").show(300);
+                    $("#sall").removeClass("btn-primary");
+                    $("#sall").addClass("btn-success");
+                    $("#s1").removeClass("btn-success");
+                    $("#s1").addClass("btn-primary");
+                    $("#s2").removeClass("btn-success");
+                    $("#s2").addClass("btn-primary");
+                    $("#all").removeClass("btn-primary");
+                    $("#all").addClass("btn-success");
+                    $("#l1").removeClass("btn-success");
+                    $("#l1").addClass("btn-primary");
+                    $("#l2").removeClass("btn-success");
+                    $("#l2").addClass("btn-primary");
+                    $("#l3").removeClass("btn-success");
+                    $("#l3").addClass("btn-primary");
+                });
+                $("#l1").on("click", function () {
+                    $("[id='ff']").show(300);
+                    $("[id='fs']").show(300);
+                    $("[id='sf']").hide(300);
+                    $("[id='ss']").hide(300);
+                    $("[id='tf']").hide(300);
+                    $("#sall").removeClass("btn-primary");
+                    $("#sall").addClass("btn-success");
+                    $("#s1").removeClass("btn-success");
+                    $("#s1").addClass("btn-primary");
+                    $("#s2").removeClass("btn-success");
+                    $("#s2").addClass("btn-primary");
+                    $("#all").removeClass("btn-success");
+                    $("#all").addClass("btn-primary");
+                    $("#l1").removeClass("btn-primary");
+                    $("#l1").addClass("btn-success");
+                    $("#l2").removeClass("btn-success");
+                    $("#l2").addClass("btn-primary");
+                    $("#l3").removeClass("btn-success");
+                    $("#l3").addClass("btn-primary");
+                });
+                $("#l2").on("click", function () {
+                    $("[id='ff']").hide(300);
+                    $("[id='fs']").hide(300);
+                    $("[id='sf']").show(300);
+                    $("[id='ss']").show(300);
+                    $("[id='tf']").hide(300);
+                    $("#sall").removeClass("btn-primary");
+                    $("#sall").addClass("btn-success");
+                    $("#s1").removeClass("btn-success");
+                    $("#s1").addClass("btn-primary");
+                    $("#s2").removeClass("btn-success");
+                    $("#s2").addClass("btn-primary");
+                    $("#all").removeClass("btn-success");
+                    $("#all").addClass("btn-primary");
+                    $("#l1").removeClass("btn-success");
+                    $("#l1").addClass("btn-primary");
+                    $("#l2").removeClass("btn-primary");
+                    $("#l2").addClass("btn-success");
+                    $("#l3").removeClass("btn-success");
+                    $("#l3").addClass("btn-primary");
+                });
+                $("#l3").on("click", function () {
+                    $("[id='ff']").hide(300);
+                    $("[id='fs']").hide(300);
+                    $("[id='sf']").hide(300);
+                    $("[id='ss']").hide(300);
+                    $("[id='tf']").show(300);
+                    $("#sall").removeClass("btn-primary");
+                    $("#sall").addClass("btn-success");
+                    $("#s1").removeClass("btn-success");
+                    $("#s1").addClass("btn-primary");
+                    $("#s2").removeClass("btn-success");
+                    $("#s2").addClass("btn-primary");
+                    $("#all").removeClass("btn-success");
+                    $("#all").addClass("btn-primary");
+                    $("#l1").removeClass("btn-success");
+                    $("#l1").addClass("btn-primary");
+                    $("#l2").removeClass("btn-success");
+                    $("#l2").addClass("btn-primary");
+                    $("#l3").removeClass("btn-primary");
+                    $("#l3").addClass("btn-success");
+                });
+            </script>
+            <div class="card_holder" style="padding:0px;">
+                <div class="card_custom"></div>
+                <div class="card_custom">
+                    <table class="fl-table">
+                        <thead>
+                            <tr>
+                                <td colspan="3">
+                                    <button class="btn btn-success" id="sall">All</button>&emsp;
+                                    <button class="btn btn-primary" id="s1">Semester 1</button>&emsp;
+                                    <button class="btn btn-primary" id="s2">Semester 2</button>
+                                </td>
+                                <script>
 
+                                </script>
+                            </tr>
+                            <tr>
+                                <th>Course Code</th>
+                                <th>Course Name</th>
+                                <th>Result</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <div id="ff">
+
+                            </div>
+                            <div id="fs">
+
+                            </div>
+                            <div id="sf">
+
+                            </div>
+                            <div id="ss">
+
+                            </div>
+
+                            <div id="tf">
+                                <tr id="tf">
+                                    <td>ENG3122</td>
+                                    <td>English V</td>
+                                    <td>Degree</td>
+                                </tr>
+                                <tr id="tf">
+                                    <td>ICT3113</td>
+                                    <td>Advanced Programming in Java/C++</td>
+                                    <td>Degree</td>
+                                    
+                                </tr>
+                                <tr id="tf">
+                                    <td>ICT3123</td>
+                                    <td>IT Project Management</td>
+                                    <td>Degree</td>
+                                    
+                                </tr>
+                                <tr id="tf">
+                                    <td>ICT3132</td>
+                                    <td>Software Testing Methods and Tools</td>
+                                    <td>Degree</td>
+                                   
+                                </tr>
+                                <tr id="tf">
+                                    <td>ICT3142</td>
+                                    <td>Mobile Computing Principles</td>
+                                    <td>Degree</td>
+                                    
+                                </tr>
+                                <tr id="tf">
+                                    <td>ICT3152</td>
+                                    <td>Human Computer Interaction</td>
+                                    <td>Degree</td>
+                                    
+                                </tr>
+                                <tr id="tf">
+                                    <td>ICT3162</td>
+                                    <td>Rapid and Agile Software Development</td>
+                                    <td>Degree</td>
+                                    
+                                </tr>
+                                <tr id="tf">
+                                    <td>ICT3173</td>
+                                    <td>Group Project</td>
+                                    <td>Degree</td>
+                                    
+                                </tr>
+                                <tr id="tf">
+                                    <td>TCS3131</td>
+                                    <td>Human Resource Management</td>
+                                    <td>Degree</td>
+                                    
+                                </tr>
+                            </div>
+                            
+                        <tbody>
+                    </table>
+                </div>
+                <div class="card_custom"></div>
+            </div>
+
+
+                
+            
         </div>
     </div>
 
