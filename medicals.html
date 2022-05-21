@@ -95,32 +95,34 @@
             </script>
             <div id="inb">
                 <h2>Instructions</h2>
-                <div class="table-wrapper">
-                    <table class="fl-table">
+                <div class="card_holder" style="padding: 0px;">
+                    <div class="card_custom"></div>
+                    <div class="card_custom">
+                        <table class="fl-table">
                         <tr>
                             <td></td>
                         </tr>
                         <tr></tr>
                         <tr>
-                            <td>1. You can upload a medical certificate and the dates covered by the medical
+                            <td style="padding-left:30px; text-align: left;">1. You can upload a medical certificate and the dates covered by the medical
                                 certificate.</td>
                         </tr>
                         <tr></tr>
                         <tr>
-                            <td>2. TECMIS will give you a reference number (REF No) for each medical.</td>
+                            <td style="padding-left:30px; text-align: left;">2. TECMIS will give you a <b>reference number (REF No)</b> for each medical.</td>
                         </tr>
                         <tr></tr>
                         <tr>
-                            <td>3. The original medical certificate should be submitted to the Deans Office with the
-                                Reference number and Student ID number.</td>
+                            <td style="padding-left:30px; text-align: left;">3. The original medical certificate should be submitted to the Deans Office with the
+                                <b>Reference number</b> and <b>Student ID number</b>.</td>
                         </tr>
                         <tr></tr>
                         <tr>
-                            <td>4. If you make any mistake you may edit during the "Pending Approval" period.</td>
+                            <td style="padding-left:30px; text-align: left;">4. If you make any mistake you may edit during the "Pending Approval" period.</td>
                         </tr>
                         <tr></tr>
                         <tr>
-                            <td>5. Conditions stated 3. above are not fulfilled, the medical certificate will not be
+                            <td style="padding-left:30px; text-align: left;">5. Conditions stated 3. above are not fulfilled, the medical certificate will not be
                                 considered.</td>
                         </tr>
                         <tr></tr>
@@ -128,98 +130,108 @@
                             <td></td>
                         </tr>
                     </table>
+                    </div>
+                    <div class="card_custom"></div>
                 </div>
             </div>
             <div id="smb">
                 <h2>Submit Medical</h2>
-                <div class="table-wrapper">
-                    <table class="fl-table">
-                        <form>
-                            <tr>
-                                <td>&emsp;</td>
-                                <td>&emsp;</td>
-                                <td>&emsp;</td>
-                                <td>&emsp;</td>
-                                <td>&emsp;</td>
-                                <td>&emsp;</td>
-                                <td>&emsp;</td>
-                            </tr>
-                            <tr></tr>
-                            <tr>
-                                <td> &emsp;&emsp;&emsp;</td>
-                                <td colspan="2">Medical Start Date</td>
-                                <td>&emsp;&emsp;&emsp;</td>
-                                <td colspan="2">Medical End Date</td>
-                                <td>&emsp;&emsp;&emsp;<i class="ba bi-calender"></i></td>
-                            </tr>
-                            <tr></tr>
-                            <tr>
-                                <td></td>
-                                <td colspan="2">
-                                    <div class="input-group date" id="datepicker">
-                                        <input type="text" class="form-control">
-                                        <span class="input-group-append">
-                                            <span class="input-group-text bg-white">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="24" fill="currentColor" class="bi bi-calendar" viewBox="0 0 20 20">
-                                                    <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"></path>
-                                                  </svg>
+                <div class="card_holder" style="padding: 0px;">
+                    <div class="card_custom"></div>
+                    <div class="card_custom">
+                        <table class="fl-table">
+                            <form>
+                                <tr>
+                                    <td>&emsp;</td>
+                                    <td>&emsp;</td>
+                                    <td>&emsp;</td>
+                                    <td>&emsp;</td>
+                                    <td>&emsp;</td>
+                                    <td>&emsp;</td>
+                                    <td>&emsp;</td>
+                                </tr>
+                                <tr></tr>
+                                <tr>
+                                    <td> &emsp;&emsp;&emsp;</td>
+                                    <td colspan="2"><b>Medical Start Date</b></td>
+                                    <td>&emsp;&emsp;&emsp;</td>
+                                    <td colspan="2"><b>Medical End Date</b></td>
+                                    <td>&emsp;&emsp;&emsp;<i class="ba bi-calender"></i></td>
+                                </tr>
+                                <tr></tr>
+                                <tr>
+                                    <td></td>
+                                    <td colspan="2">
+                                        <div class="input-group date" id="datepicker">
+                                            <input type="text" class="form-control">
+                                            <span class="input-group-append">
+                                                <span class="input-group-text bg-white">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="24" fill="currentColor" class="bi bi-calendar" viewBox="0 0 20 20">
+                                                        <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"></path>
+                                                      </svg>
+                                                </span>
                                             </span>
-                                        </span>
-                                    </div>
-                                    <script type="text/javascript">
-                                        $(function(){
-                                            $('#datepicker').datepicker();
-                                        });
-                                    </script>
-                                </td>
-                                <td></td>
-                                <td colspan="2">
-                                    <div class="input-group date" id="datepicker">
-                                        <input type="text" class="form-control">
-                                        <span class="input-group-append">
-                                            <span class="input-group-text bg-white">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="24" fill="currentColor" class="bi bi-calendar" viewBox="0 0 20 20">
-                                                    <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"></path>
-                                                  </svg>
-                                            </span>
-                                        </span>
-                                    </div>
-                                    <script type="text/javascript">
-                                        $(function(){
-                                            $('#datepicker').datepicker();
-                                        });
-                                    </script>
-                                </td>
-                                <td></td>
-                            </tr>
-                            <tr></tr>
-                            <tr>
-                                <td colspan="2"></td>
-                                <td colspan="3">
-                                    <form>
-                                        <div class="form-group">
-                                            <input type="file" class="form-control" id="customFile" />
                                         </div>
-                                    </form>
-                                </td>
-                            </tr>
-                            <tr></tr>
-                            <tr>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td colspan="7"></td>
-                            </tr>
-                            <tr>
-                                <td colspan="3"></td>
-                                <td><input type="submit" class="btn btn-success"></td>
-                            </tr>
-                            <tr></tr>
-                            <tr>
-                                <td></td>
-                            </tr>
-                        </form>
-                    </table>
+                                        <script type="text/javascript">
+                                            $(function(){
+                                                $('#datepicker').datepicker();
+                                            });
+                                        </script>
+                                    </td>
+                                    <td></td>
+                                    <td colspan="2">
+                                        <div class="input-group date" id="datepicker">
+                                            <input type="text" class="form-control">
+                                            <span class="input-group-append">
+                                                <span class="input-group-text bg-white">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="24" fill="currentColor" class="bi bi-calendar" viewBox="0 0 20 20">
+                                                        <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"></path>
+                                                      </svg>
+                                                </span>
+                                            </span>
+                                        </div>
+                                        <script type="text/javascript">
+                                            $(function(){
+                                                $('#datepicker').datepicker();
+                                            });
+                                        </script>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr></tr>
+                                <tr>
+                                    <td colspan="2"></td>
+                                    <td colspan="3">
+                                        <form>
+                                            <div class="form-group">
+                                                <input type="file" class="form-control" id="customFile" />
+                                            </div>
+                                        </form>
+                                    </td>
+                                </tr>
+                                <tr></tr>
+                                <tr>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    
+                                </tr>
+                                <tr>
+                                    <td colspan="7"></td>
+                                </tr>
+                                <tr></tr>
+                                <tr>
+                                    <td colspan="3"></td>
+                                    <td><input type="submit" class="btn btn-success"></td>
+                                </tr>
+                                <tr></tr>
+                                <tr>
+                                    <td></td>
+                                </tr>
+                            </form>
+                        </table>
+                    </div>
+                    <div class="card_custom"></div>
                 </div>
             </div>
             <div id="vsmb">
