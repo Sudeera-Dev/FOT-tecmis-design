@@ -81,6 +81,10 @@
                                     <td colspan="2"></td>
                                 </tr>
                                 <tr>
+                                    <td></td>
+                                </tr>
+                                <tr></tr>
+                                <tr>
                                     <td colspan="2" style="padding-left:30px; text-align: left;" id="hoverhide">
                                         <pre>
 1. You may login to this account by visiting https://www.office.com/
@@ -103,14 +107,16 @@ that account won't be continued further.
                         </table>
                         <script>
                             $("#hover").hover(function () {
-                                $('#hoverhide').show(300);
+                                $('#hoverhide').show(150);
+                                $('#hide2').hide();
                             }, function () {
-                                $('#hoverhide').hide(300);
+                                $('#hoverhide').hide(150);
+                                $('#hide2').show(200);
                             }
                             );
                         </script>
                     </div>
-                    <div class="card_custom">
+                    <div class="card_custom" id="hide2">
                         <table class="fl-table">
                             <tbody>
                                 <tr>
