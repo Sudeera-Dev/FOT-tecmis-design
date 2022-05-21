@@ -6,7 +6,9 @@ $(document).ready(function () {
     $('#navdel3').attr('style', 'display: none');
     $('#navdel4').attr('style', 'display: none');
     $('#navdel5').attr('style', 'display: none');
+    $('#navdel6').attr('style', 'display: none');
     $('.logo').attr('style', 'padding-left: 100px');
+    $('.datepicker').datepicker()
 });
 
 $("#mySidenav").hover(function () {
@@ -17,6 +19,7 @@ $("#mySidenav").hover(function () {
     $('#navdel3').delay(290).fadeIn();
     $('#navdel4').delay(290).fadeIn();
     $('#navdel5').delay(290).fadeIn();
+    $('#navdel6').delay(290).fadeIn();
     $('.logo').attr('style', 'padding-left: 258px');
     
 }, function () {
@@ -27,6 +30,7 @@ $("#mySidenav").hover(function () {
     $('#navdel3').attr('style', 'display: none');
     $('#navdel4').attr('style', 'display: none');
     $('#navdel5').attr('style', 'display: none');
+    $('#navdel6').attr('style', 'display: none');
     $('.logo').attr('style', 'padding-left: 100px');
 }
 );

@@ -48,7 +48,7 @@ body {
     background-color: rgb(136, 12, 12);
  }
 
-#navdel1, #navdel2, #navdel3, #navdel4, #navdel5 {
+#navdel1, #navdel2, #navdel3, #navdel4, #navdel5, #navdel6 {
    display: inline;
    padding-left: 8px;
    transition: 0.3s;
@@ -415,6 +415,6 @@ h2{
 
 .dropdown:hover .dropbtn {background-color: #3e8e41;}
 
-#ict3113ex, .back, #acub, #crub, #hrb , #dppb, #atb2, #carb, #lexcb{
+#ict3113ex, .back, #acub, #crub, #hrb , #dppb, #atb2, #carb, #lexcb, #vsmb, #smb{
   display: none;
 }
