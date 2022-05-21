@@ -75,7 +75,16 @@
                                 <tr></tr>
                                 <tr>
                                     <td><b>Password</b></td>
-                                    <td>fg567@sd345</td>
+                                    <td>
+                                        <div id="pass">*********** &emsp;<i class="bi bi-eye-fill" id="pas"></i></div>
+                                    </td>
+                                    <script>          
+                                        $("#pas").on("click", function () {
+                                            $("#pas").removeClass("bi-eye-fill");
+                                            $("#pas").addClass("bi-eye-slash-fill");
+                                            $("#pass").text("fg5sd34567@");
+                                        });
+                                    </script>
                                 </tr>
                                 <tr>
                                     <td colspan="2"></td>
