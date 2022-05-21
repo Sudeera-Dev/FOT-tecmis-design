@@ -90,14 +90,79 @@
                     $("[id='atb2']").hide(300);
                     $("#at").removeClass("btn-success");
                     $("#at").addClass("btn-primary");
-                    $("#car").removeClass("btn-primary");
-                    $("#car").addClass("btn-success");
+                    $("#car").removeClass("btn-success");
+                    $("#car").addClass("btn-primary");
                     $("#dpp").removeClass("btn-primary");
                     $("#dpp").addClass("btn-success");
                     $("#lexc").removeClass("btn-success");
                     $("#lexc").addClass("btn-primary");
                 });
+                $("#lexc").on("click", function () {
+                    $("[id='atb']").hide(300);
+                    $("[id='carb']").hide(300);
+                    $("[id='dppb']").hide(300);
+                    $("[id='lexcb']").show(300);
+                    $("[id='atb2']").hide(300);
+                    $("#at").removeClass("btn-success");
+                    $("#at").addClass("btn-primary");
+                    $("#car").removeClass("btn-sucess");
+                    $("#car").addClass("btn-primary");
+                    $("#dpp").removeClass("btn-success");
+                    $("#dpp").addClass("btn-primary");
+                    $("#lexc").removeClass("btn-primary");
+                    $("#lexc").addClass("btn-success");
+                });
             </script>
+            <div  id="lexcb">
+                <div class="card_holder">
+                    <div class="card_custom">
+                        <table class="fl-table">
+                            <thead>
+                                <tr>
+                                    <td colspan="3"><b>Ongoing Programs</b></td>
+                                </tr>
+                                <tr>
+                                    <th>Program Name</th>
+                                    <th>Start Date</th>
+                                    <th>End Date</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Chinese Language</td>
+                                    <td>2022/04/01</td>
+                                    <td>2022/06/30</td>
+                                </tr>
+                                <tr>
+                                    <td>Japanese Language</td>
+                                    <td>2022/03/01</td>
+                                    <td>2022/05/30</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <div class="card_custom">
+                        <table class="fl-table">
+                            <thead>
+                                <tr>
+                                    <td colspan="2"><b>Upcoming Programs</b></td>
+                                </tr>
+                                <tr>
+                                    <th>Program Name</th>
+                                    <th>Start Date</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>German Language</td>
+                                    <td>2022/07/01</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
             <div  id="dppb">
                 <div class="card_holder">
                     <div class="card_custom">
