@@ -73,7 +73,7 @@
                                     $("[id='ict3113ex']").show(300);
                                     $("#label").text("ICT3113 - Medicals");
                                     $("#tabhide").hide(300);
-                                    $("#back").show();
+                                    $(".back").show();
                                 });
                             </script>
                         </tr>
@@ -167,13 +167,13 @@
                     <tbody>
                 </table>
             </div>
-            <h2><button class="btn btn-danger" id="back">Back</button></h2>
+            <h2><button class="btn btn-danger back">Back</button></h2>
             <script>
-                $("#back").on("click", function () {
+                $(".back").on("click", function () {
                     $("[id='ict3113ex']").hide(300);
                     $("#label").text("Medicals");
                     $("#tabhide").show(300);
-                    $("#back").hide();
+                    $(".back").hide();
                 });
             </script>
         </div>
