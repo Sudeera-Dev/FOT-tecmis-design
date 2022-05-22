@@ -434,3 +434,26 @@ h2{
   transition: 0.3s;
 
 }
+.search-bar-wrapper{
+  background-color: white;
+  padding: 0 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 20px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  padding-right: 0;
+}
+.search-bar-wrapper input{
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding-left: 20px;
+}
+.search-bar-wrapper i{
+  background-color: #0d6efd;
+  color: white;
+  padding: 8px 8px 11px 8px;
+  border-radius: 10px;
+
+}
