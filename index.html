@@ -27,19 +27,33 @@
             <div class="form_box">
                 <h1>LOG IN</h1>
                 <br>
-                <form action="dashboard.html">
+                <form name="myForm" action="dashboard.html" onsubmit="return validateForm()">
                     <div class="form-group">
-                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Username">
+                        <input type="text" class="form-control" name="uid" id="uid" placeholder="Username">
                     </div>
                     <br>
                     <div class="form-group">
-                        <input type="password" class="form-control" id="exampleFormControlInput2"placeholder="password">
+                        <input type="password" class="form-control" name="password" id="password"
+                            placeholder="password">
                     </div>
                     <br>
                     <div class="log_btn">
                         <button type="submit" class="btn btn-primary mb-2 ">LOG IN</button>
                     </div>
                 </form>
+                <script>
+                    function validateForm() {
+                        let x = document.forms["myForm"]["uid"].value;
+                        let y = document.forms["myForm"]["password"].value;
+                        if (x == "") {
+                            alert("Username must be filled out");
+                            return false;
+                        }else if(y.length < 8){
+                            alert("Password must be 8 characters long");
+                            return false;
+                        }
+                    }
+                </script>
             </div>
         </div>
 
