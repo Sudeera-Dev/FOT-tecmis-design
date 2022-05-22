@@ -43,19 +43,43 @@
     <div class="top_nav">
 
         <img src="img/logo.png" class="logo">
-        <a href="#" ><img src="img/profile.jpg" class="profile"></a>
+        <a href="#"><img src="img/profile.jpg" class="profile"></a>
         <a href="a_calander.html">Academic Calander</a>
-        <a href="notices.html" >Notices</a>
+        <a href="notices.html">Notices</a>
     </div>
     <div id="main">
         <div class="inside">
             <h2 id="erub">Examinations Results</h2>
             <h2>
                 <button class="btn btn-success" id="all">All</button>&emsp;
-                <button class="btn btn-primary" id="l1">Level 1</button>&emsp;
-                <button class="btn btn-primary" id="l2">Level 2</button>&emsp;
-                <button class="btn btn-primary" id="l3">Level 3</button>&emsp;
-                <button class="btn btn-primary" id="l4">Level 4</button>&emsp;
+                <div class="dropdown">
+                    <button class="btn btn-primary" id="l1">Level 1</button>&emsp;
+                    <div class="dropdown-content">
+                        <a id="l11">Semester 1</a>
+                        <a href="#" id="l12">Semester 2</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="btn btn-primary" id="l2">Level 2</button>&emsp;
+                    <div class="dropdown-content">
+                        <a href="#" id="l21">Semester 1</a>
+                        <a href="#" id="l22">Semester 2</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="btn btn-primary" id="l3">Level 3</button>&emsp;
+                    <div class="dropdown-content">
+                        <a href="#" id="l31">Semester 1</a>
+                        <a href="#">Semester 2</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="btn btn-primary">Level 4</button>&emsp;
+                    <div class="dropdown-content">
+                        <a href="#">Semester 1</a>
+                        <a href="#">Semester 2</a>
+                    </div>
+                </div>
             </h2>
             <script>
                 $("#all").on("click", function () {
@@ -64,6 +88,7 @@
                     $("[id='sf']").show(300);
                     $("[id='ss']").show(300);
                     $("[id='tf']").show(300);
+                    $("#etext").text("All results");
                     $("#sall").removeClass("btn-primary");
                     $("#sall").addClass("btn-success");
                     $("#s1").removeClass("btn-success");
@@ -79,12 +104,13 @@
                     $("#l3").removeClass("btn-success");
                     $("#l3").addClass("btn-primary");
                 });
-                $("#l1").on("click", function () {
+                $("#l11").on("click", function () {
                     $("[id='ff']").show(300);
-                    $("[id='fs']").show(300);
+                    $("[id='fs']").hide(300);
                     $("[id='sf']").hide(300);
                     $("[id='ss']").hide(300);
                     $("[id='tf']").hide(300);
+                    $("#etext").text("Level 1 - Semester 1");
                     $("#sall").removeClass("btn-primary");
                     $("#sall").addClass("btn-success");
                     $("#s1").removeClass("btn-success");
@@ -100,12 +126,35 @@
                     $("#l3").removeClass("btn-success");
                     $("#l3").addClass("btn-primary");
                 });
-                $("#l2").on("click", function () {
+                $("#l12").on("click", function () {
+                    $("[id='ff']").hide(300);
+                    $("[id='fs']").show(300);
+                    $("[id='sf']").hide(300);
+                    $("[id='ss']").hide(300);
+                    $("[id='tf']").hide(300);
+                    $("#etext").text("Level 1 - Semester 2");
+                    $("#sall").removeClass("btn-primary");
+                    $("#sall").addClass("btn-success");
+                    $("#s1").removeClass("btn-success");
+                    $("#s1").addClass("btn-primary");
+                    $("#s2").removeClass("btn-success");
+                    $("#s2").addClass("btn-primary");
+                    $("#all").removeClass("btn-success");
+                    $("#all").addClass("btn-primary");
+                    $("#l1").removeClass("btn-primary");
+                    $("#l1").addClass("btn-success");
+                    $("#l2").removeClass("btn-success");
+                    $("#l2").addClass("btn-primary");
+                    $("#l3").removeClass("btn-success");
+                    $("#l3").addClass("btn-primary");
+                });
+                $("#l21").on("click", function () {
                     $("[id='ff']").hide(300);
                     $("[id='fs']").hide(300);
                     $("[id='sf']").show(300);
-                    $("[id='ss']").show(300);
+                    $("[id='ss']").hide(300);
                     $("[id='tf']").hide(300);
+                    $("#etext").text("Level 2 - Semester 1");
                     $("#sall").removeClass("btn-primary");
                     $("#sall").addClass("btn-success");
                     $("#s1").removeClass("btn-success");
@@ -121,12 +170,35 @@
                     $("#l3").removeClass("btn-success");
                     $("#l3").addClass("btn-primary");
                 });
-                $("#l3").on("click", function () {
+                $("#l22").on("click", function () {
+                    $("[id='ff']").hide(300);
+                    $("[id='fs']").hide(300);
+                    $("[id='sf']").hide(300);
+                    $("[id='ss']").show(300);
+                    $("[id='tf']").hide(300);
+                    $("#etext").text("Level 2 - Semester 2");
+                    $("#sall").removeClass("btn-primary");
+                    $("#sall").addClass("btn-success");
+                    $("#s1").removeClass("btn-success");
+                    $("#s1").addClass("btn-primary");
+                    $("#s2").removeClass("btn-success");
+                    $("#s2").addClass("btn-primary");
+                    $("#all").removeClass("btn-success");
+                    $("#all").addClass("btn-primary");
+                    $("#l1").removeClass("btn-success");
+                    $("#l1").addClass("btn-primary");
+                    $("#l2").removeClass("btn-primary");
+                    $("#l2").addClass("btn-success");
+                    $("#l3").removeClass("btn-success");
+                    $("#l3").addClass("btn-primary");
+                });
+                $("#l31").on("click", function () {
                     $("[id='ff']").hide(300);
                     $("[id='fs']").hide(300);
                     $("[id='sf']").hide(300);
                     $("[id='ss']").hide(300);
                     $("[id='tf']").show(300);
+                    $("#etext").text("Level 3 - Semester 1");
                     $("#sall").removeClass("btn-primary");
                     $("#sall").addClass("btn-success");
                     $("#s1").removeClass("btn-success");
@@ -149,14 +221,7 @@
                     <table class="fl-table">
                         <thead>
                             <tr>
-                                <td colspan="3">
-                                    <button class="btn btn-success" id="sall">All</button>&emsp;
-                                    <button class="btn btn-primary" id="s1">Semester 1</button>&emsp;
-                                    <button class="btn btn-primary" id="s2">Semester 2</button>
-                                </td>
-                                <script>
-
-                                </script>
+                                <td colspan="3"><b id="etext">All Results </b></td>
                             </tr>
                             <tr>
                                 <th>Course Code</th>
@@ -167,184 +232,184 @@
                         <tbody>
                             <div id="ff">
                                 <tr id="ff">
-                                    <td>ENG1114	</td>
+                                    <td>ENG1114 </td>
                                     <td>English I</td>
                                     <td><b>A+ </b></td>
                                 </tr>
                                 <tr id="ff">
-                                    <td>ICT1113	</td>
+                                    <td>ICT1113 </td>
                                     <td>Essentials of ICT</td>
                                     <td><b>B </b></td>
-                                    
+
                                 </tr>
                                 <tr id="ff">
-                                    <td>ICT1123	</td>
-                                    <td>PC Applications and Computer Laboratory	</td>
+                                    <td>ICT1123 </td>
+                                    <td>PC Applications and Computer Laboratory </td>
                                     <td><b>A+ </b></td>
-                                    
+
                                 </tr>
                                 <tr id="ff">
-                                    <td>ICT1133	</td>
+                                    <td>ICT1133 </td>
                                     <td>Fundamentals of Computer Programming</td>
                                     <td><b>C+ </b></td>
-                                   
+
                                 </tr>
                                 <tr id="ff">
-                                    <td>ICT1143	</td>
+                                    <td>ICT1143 </td>
                                     <td>Web Technologies</td>
                                     <td><b>A- </b></td>
-                                    
+
                                 </tr>
                                 <tr id="ff">
-                                    <td>TMS1113	</td>
+                                    <td>TMS1113 </td>
                                     <td>Foundation of Mathematics</td>
                                     <td><b>B- </b></td>
-                                    
+
                                 </tr>
-                                
+
 
                             </div>
                             <div id="fs">
                                 <tr id="fs">
-                                    <td>ENG1222	</td>
+                                    <td>ENG1222 </td>
                                     <td>English II</td>
                                     <td><b>A- </b></td>
                                 </tr>
                                 <tr id="fs">
-                                    <td>ICT1213	</td>
+                                    <td>ICT1213 </td>
                                     <td>Database Management Systems</td>
                                     <td><b>A+ </b></td>
-                                    
+
                                 </tr>
                                 <tr id="fs">
-                                    <td>ICT1223	</td>
-                                    <td>System Analysis & Design and Usability	</td>
+                                    <td>ICT1223 </td>
+                                    <td>System Analysis & Design and Usability </td>
                                     <td><b>B+ </b></td>
-                                    
+
                                 </tr>
                                 <tr id="fs">
-                                    <td>ICT1232	</td>
+                                    <td>ICT1232 </td>
                                     <td>Computer Laboratory</td>
                                     <td><b>B- </b></td>
-                                   
+
                                 </tr>
                                 <tr id="fs">
-                                    <td>ICT1242	</td>
+                                    <td>ICT1242 </td>
                                     <td>Management Information System</td>
                                     <td><b>B </b></td>
-                                    
+
                                 </tr>
                                 <tr id="fs">
-                                    <td>ICT1252		</td>
+                                    <td>ICT1252 </td>
                                     <td>Computer Architecture</td>
                                     <td><b>A- </b></td>
-                                    
+
                                 </tr>
                                 <tr id="fs">
-                                    <td>TCS1212		</td>
+                                    <td>TCS1212 </td>
                                     <td>Fundamentals of Management</td>
                                     <td><b>C+ </b></td>
-                                    
+
                                 </tr>
                                 <tr id="fs">
-                                    <td>TMS1233		</td>
+                                    <td>TMS1233 </td>
                                     <td>Discrete Mathematics</td>
                                     <td><b>C- </b></td>
-                                    
+
                                 </tr>
 
                             </div>
                             <div id="sf">
                                 <tr id="sf">
-                                    <td>ENG2122	</td>
+                                    <td>ENG2122 </td>
                                     <td>English III</td>
                                     <td><b>A+ </b></td>
                                 </tr>
                                 <tr id="sf">
-                                    <td>ICT2113	</td>
+                                    <td>ICT2113 </td>
                                     <td>Data Structures and Algorithms</td>
                                     <td><b>C </b></td>
-                                    
+
                                 </tr>
                                 <tr id="sf">
                                     <td>ICT2123</td>
                                     <td>Object Oriented Development</td>
                                     <td><b>B </b></td>
-                                    
+
                                 </tr>
                                 <tr id="sf">
                                     <td>ICT2133</td>
                                     <td>Object Oriented Analysis & Design</td>
                                     <td><b>A </b></td>
-                                   
+
                                 </tr>
                                 <tr id="sf">
                                     <td>ICT2142</td>
                                     <td>Professional Issues in IT</td>
                                     <td><b>B </b></td>
-                                    
+
                                 </tr>
                                 <tr id="sf">
-                                    <td>ICT2153	</td>
+                                    <td>ICT2153 </td>
                                     <td>Internet Application Development</td>
                                     <td><b>A+ </b></td>
-                                    
+
                                 </tr>
                                 <tr id="sf">
-                                    <td>TCS2112	</td>
+                                    <td>TCS2112 </td>
                                     <td>Business Economics</td>
                                     <td><b>B- </b></td>
-                                    
+
                                 </tr>
                                 <tr id="sf">
-                                    <td>TCS2122	</td>
+                                    <td>TCS2122 </td>
                                     <td>Soft Skills</td>
                                     <td><b>C+ </b></td>
-                                    
+
                                 </tr>
-                               
+
                             </div>
                             <div id="ss">
                                 <tr id="ss">
-                                    <td>ENG2222	</td>
+                                    <td>ENG2222 </td>
                                     <td>English IV</td>
                                     <td><b>A </b></td>
                                 </tr>
                                 <tr id="ss">
-                                    <td>ICT2213	</td>
+                                    <td>ICT2213 </td>
                                     <td>Operating System Concepts & Applications</td>
                                     <td><b>B+ </b></td>
-                                    
+
                                 </tr>
                                 <tr id="ss">
-                                    <td>ICT2223	</td>
+                                    <td>ICT2223 </td>
                                     <td>Computer Networks</td>
                                     <td><b>A- </b></td>
-                                    
+
                                 </tr>
                                 <tr id="ss">
-                                    <td>ICT2233	</td>
+                                    <td>ICT2233 </td>
                                     <td>Software Engineering</td>
                                     <td><b>A+ </b></td>
-                                   
+
                                 </tr>
                                 <tr id="ss">
-                                    <td>ICT2243	</td>
+                                    <td>ICT2243 </td>
                                     <td>E-Commerce Implementation, Management & Security</td>
                                     <td><b>A</b></td>
-                                    
+
                                 </tr>
                                 <tr id="ss">
-                                    <td>TCS2212	</td>
+                                    <td>TCS2212 </td>
                                     <td>Accounting for Technologists</td>
                                     <td><b>B- </b></td>
-                                    
+
                                 </tr>
                                 <tr id="ss">
-                                    <td>TMS2213	</td>
+                                    <td>TMS2213 </td>
                                     <td>Probability and Statistics</td>
                                     <td><b>C </b></td>
-                                    
+
                                 </tr>
 
                             </div>
@@ -359,52 +424,52 @@
                                     <td>ICT3113</td>
                                     <td>Advanced Programming in Java/C++</td>
                                     <td><b>C+ </b></td>
-                                    
+
                                 </tr>
                                 <tr id="tf">
                                     <td>ICT3123</td>
                                     <td>IT Project Management</td>
                                     <td><b>B </b></td>
-                                    
+
                                 </tr>
                                 <tr id="tf">
                                     <td>ICT3132</td>
                                     <td>Software Testing Methods and Tools</td>
                                     <td><b>B- </b></td>
-                                   
+
                                 </tr>
                                 <tr id="tf">
                                     <td>ICT3142</td>
                                     <td>Mobile Computing Principles</td>
                                     <td><b>A- </b></td>
-                                    
+
                                 </tr>
                                 <tr id="tf">
                                     <td>ICT3152</td>
                                     <td>Human Computer Interaction</td>
                                     <td><b>B+ </b></td>
-                                    
+
                                 </tr>
                                 <tr id="tf">
                                     <td>ICT3162</td>
                                     <td>Rapid and Agile Software Development</td>
                                     <td><b>B- </b></td>
-                                    
+
                                 </tr>
                                 <tr id="tf">
                                     <td>ICT3173</td>
                                     <td>Group Project</td>
                                     <td><b>A </b></td>
-                                    
+
                                 </tr>
-                                <tr id="tf" >
+                                <tr id="tf">
                                     <td>TCS3131</td>
                                     <td>Human Resource Management</td>
                                     <td><b>C- </b></td>
-                                    
+
                                 </tr>
                             </div>
-                            
+
                         <tbody>
                     </table>
                 </div>
@@ -412,8 +477,8 @@
             </div>
 
 
-                
-            
+
+
         </div>
     </div>
 
